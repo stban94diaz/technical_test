@@ -3,6 +3,8 @@
 import sys
 
 def getWays(n, c):
+    if n == 0:
+        print( 0 )
     res = [0 for i in range(n+1)]
     res[0] = 1
     for coin in c:
